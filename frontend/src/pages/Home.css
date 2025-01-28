@@ -1,0 +1,463 @@
+section {
+    max-width: 500px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    section {
+        max-width: 1200px;
+    }
+}
+
+/* Social media information */
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #008087;
+    height: auto;
+    margin-top: 56px;
+    position: relative;
+}
+
+.dogImg {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .infoContainer {
+        font-size: 1.6rem;
+    }
+
+    .dogImg {
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .infoContainer {
+        flex-direction: row-reverse;
+    }
+
+    .dogImg {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.information {
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.header2 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.information::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.catchCopy {
+    /* text-align: center; */
+    margin: 8px 5%;
+}
+
+.socialMedia {
+    color: white;
+    margin-top: 8px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon a:hover, .icon a:visited {
+    color: inherit;
+}
+
+.instagram {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.finger {
+    border: 1px solid black;
+    height: 20px;  
+    width: 20px;  
+    border-radius: 300px 90px;
+    background-color: #c47e5a;
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+}
+
+.finger2 {
+    border: 1px solid black;
+    height: 20px;  
+    width: 20px;  
+    border-radius: 300px 90px;
+    background-color: blcak;
+    position: absolute;
+    background-color: #c47e5a;
+    bottom: 56px;
+    left: 48px;
+}
+
+.finger3 {
+    border: 1px solid black;
+    height: 20px;  
+    width: 20px;  
+    border-radius: 300px 90px;
+    background-color: blcak;
+    position: absolute;
+    background-color: #c47e5a;
+    bottom: 32px;
+    left: 64px;
+}
+
+.palm {
+    height: 40px;  
+    width: 50px;  
+    background-color: blcak;
+    position: absolute;
+    background-color: #c47e5a;
+    bottom: 10px;
+    left: 8px;
+    border-bottom-left-radius: 1200px 500px;
+    border-top-right-radius: 300px 300px; 
+    transform: rotate(180deg);
+}
+/* reasons to choose Pets & Me */
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: 8px auto 0;
+}
+
+.header2 {
+    display: inline;
+}
+
+.example {
+    text-align: center;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.example::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto 0;
+}
+
+.exampleContainer {
+    /* text-align: center; */
+    height: auto;
+    background-color: #e36c39;
+    margin-bottom: 32px;
+}
+
+.dogImg2 {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media screen and (min-width:768px) {
+    .exampleContainer {
+        font-size: 1.6rem;
+        height: auto;
+    }
+    .dogImg2 {
+        height: auto;
+    }
+    .explain p{
+        padding-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #slide1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        animation: slideIn 2s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* #slide2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        animation: slideIn2 3s ease-out;
+    }
+
+    @keyframes slideIn2 {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    #slide3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        animation: slideIn 3s ease-out;
+    } */
+
+    .images {
+        display: flex;
+        justify-content: flex-end;
+        object-fit: cover;
+        flex: 1;
+    }
+
+    .dogImg2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .ExplainContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .explain {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.explain p {
+    margin: 8px 8px;
+}
+
+.exampleContainer {
+    margin-bottom: 10%;
+}
+
+
+/* our service */
+.service {
+    display: flex;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.serviceContainer {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 960px) {
+    .serviceContainer {
+        justify-content: start;
+    }
+}
+
+.serviceBox {
+    background-color: #fdf7f2;
+    border-radius: 8px;
+}
+
+.serviceExplain {
+    margin-top: 8px;
+    padding: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .serviceContainer {
+        font-size: 1.6rem;
+    }
+}
+
+/* get started */
+.startingContainer {
+    color: white;
+    text-align: left;
+}
+
+@media screen and (min-width:768px) {
+    .startingContainer p {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .infoBox {
+        flex: 2;
+    }
+
+}
+
+.startingContainer p {
+    line-height: 1.6em;
+}
+
+
+/* contact form */
+.fa-phone {
+    margin-right: 8px;
+    color: black;
+}
+
+.startingContainer p {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.headerContact {
+    position: relative;
+    color: white;
+}
+
+.headerContact::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 8px auto 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nameInput,
+.emailInput,
+.msgInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+#message {
+    width: 300px;
+    height: 70px;
+}
+
+#email,
+#name {
+    height: 30px;
+}
+
+.btn2 {
+    margin: 16px auto;
+    width: 90px;
+    height: 30px;
+    border: 1px black solid;
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width:768px) {
+    .btn2 {
+        font-size: 1.6rem;
+        padding: 8px;
+        width: 120px;
+        height: 60px;
+    }
+
+    .infoContainer {
+        height: auto;
+    }
+}
+
+.priceImg {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 960px) {
+    .fadeIn {
+        animation: fadeIn 2s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

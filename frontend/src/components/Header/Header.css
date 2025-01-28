@@ -1,0 +1,41 @@
+.logoImg {
+    width: 30%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    background-color: #e36c39;
+    height: auto;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    #header {
+        max-width: 768px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoImg {
+        width: 160px;
+        height: 160px;
+    }
+
+    .info p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #header {
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+}

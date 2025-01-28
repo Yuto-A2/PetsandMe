@@ -1,0 +1,57 @@
+/* get started */
+.startingContainer {
+    color: white;
+    text-align: left;
+}
+
+@media screen and (min-width:768px) {
+    .startingContainer p {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .infoImg {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .infoBox {
+        flex: 2;
+    }
+
+}
+
+.startingContainer p {
+    line-height: 1.6em;
+}
+
+.btn {
+    margin: 16px auto;
+    width: 90px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 30px;
+    background-color: #9B2743;
+}
+
+@media screen and (min-width:768px) {
+    .btn {
+        font-size: 1.6rem;
+        padding: 8px;
+        width: 120px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .btn {
+       cursor: pointer;
+       transition: all 1s;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+     }
+}

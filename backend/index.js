@@ -11,7 +11,7 @@ const DBUSER = process.env.DBUSER;
 const DBPWD = process.env.DBPWD;
 const DBHOST = process.env.DBHOST;
 
-mongoose.connect(`mongodb+srv://${DBUSER}:${DBPWD}@${DBHOST}`)
+mongoose.connect('mongodb+srv://vercel-admin-user:pmS3cQmF07ZHGwZB@cluster0.7zaqm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 .then(()=> {
     console.log("connect with db...");
 }).catch((err) => {

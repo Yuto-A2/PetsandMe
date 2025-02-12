@@ -21,7 +21,7 @@ export default function Contact() {
         };
 
         try {
-            await fetch(`http://localhost:3001/api/email/?userName=${contactForm.userName}&userEmail=${contactForm.userEmail}&userMsg=${contactForm.userMsg}`);
+            await fetch(`https://petsme-backend.vercel.app/api/email/?userName=${contactForm.userName}&userEmail=${contactForm.userEmail}&userMsg=${contactForm.userMsg}`);
             
             setSuccessMessage("Sent successfully!");
 

@@ -5,7 +5,7 @@ export default function Images() {
     const [imgs, setImgs] = useState([]);
     useEffect(() => {
         const getImgs = async () => {
-            let response = await fetch("http://localhost:3001/api/imgs/");
+            let response = await fetch("https://petsme-backend.vercel.app/api/imgs/");
             let data = await response.json();
             console.log(data)
             setImgs(data);

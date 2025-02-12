@@ -1,8 +1,13 @@
 .priceContainer {
-    width: 95%;
+    width: 90%;
     margin: 8px auto;
     background-color: #fdf7f2;
     padding: 8px;
+    position: relative;
+}
+
+.priceContainer img {
+    display: none;
 }
 
 .priceContainer p {
@@ -42,6 +47,7 @@
         width: 15%;
     }
     .priceContainer {
+        width: 95%;
         position: relative;
         max-width: 1200px;
         height: auto;
@@ -61,6 +67,27 @@
 
     .priceItems3 {
         margin-top: 35%;
+    }
+
+    .priceContainer img {
+        display: block;
+        position: absolute;
+        left: 60%;
+        top: 10%;
+    }
+
+    .priceContainer img:nth-child(2) {
+        display: block;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+
+    .priceContainer img:nth-child(3) {
+        display: block;
+        position: absolute;
+        left: 70%;
+        top: 75%;
     }
 }
 

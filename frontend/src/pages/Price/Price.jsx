@@ -10,6 +10,9 @@ export default function Price() {
             {/* price list */}
             <h2 className="header">Price List</h2>
             <div className='priceContainer'>
+                <img src="../../img/pet_omocha_inu.png" alt="" />
+                <img src="../../img/inugoya_dog.png" alt="" />
+                <img src="../../img/dog_rottweiler.png" alt="" />
                 <div className="priceItems">WALKS</div>
                 <div className="priceBox">
                     <div className="priceExplain">

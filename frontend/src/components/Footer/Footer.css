@@ -8,8 +8,6 @@
     footer {
         display: flex;
         justify-content: center;
-        max-width: 100%;
-        width: 1200px;
         margin-top: 2%;
     }
 } 

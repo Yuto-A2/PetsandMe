@@ -27,7 +27,7 @@ router.get("/", async (request, response) => {
 
         const emailData = {
             from: request.query.userEmail,
-            to: "yutoarimori@gmail.com",
+            to: "Petsandme2022@gmail.com",
             subject: "Test Mail",
             text: message
         };

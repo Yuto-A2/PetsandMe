@@ -1,6 +1,6 @@
 section {
     max-width: 500px;
-    width: 100%;
+    width: 99%;
 }
 
 @media screen and (min-width: 768px) {
@@ -11,6 +11,7 @@ section {
 
 @media screen and (min-width: 960px) {
     section {
+        margin: 0 auto;
         max-width: 1200px;
     }
 }
@@ -361,84 +362,6 @@ section {
 
 .startingContainer p {
     line-height: 1.6em;
-}
-
-
-/* contact form */
-.fa-phone {
-    margin-right: 8px;
-    color: black;
-}
-
-.startingContainer p {
-    font-size: 1rem;
-    margin-top: 8px;
-}
-
-.headerContact {
-    position: relative;
-    color: white;
-}
-
-.headerContact::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    margin: 8px auto 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nameInput,
-.emailInput,
-.msgInput {
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-}
-
-#message {
-    width: 300px;
-    height: 70px;
-}
-
-#email,
-#name {
-    height: 30px;
-}
-
-.btn2 {
-    margin: 16px auto;
-    width: 90px;
-    height: 30px;
-    border: 1px black solid;
-    border-radius: 30px;
-    transition: all 1s;
-}
-
-.btn2:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
-@media screen and (min-width:768px) {
-    .btn2 {
-        font-size: 1.6rem;
-        padding: 8px;
-        width: 120px;
-        height: 60px;
-    }
-
-    .infoContainer {
-        height: auto;
-    }
 }
 
 .priceImg {

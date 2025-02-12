@@ -2,29 +2,11 @@ import React from 'react'
 import './Home.css'
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import Images from "../components/Images/Images"
 import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
-  async function handleForm(e) {
-    e.preventDefault();
-    let contactForm = {
-      userName: e.target.userName.value,
-      userEmail: e.target.userEmail.value,
-      userMsg: e.target.userMsg.value
-    };
-
-    //let message = `You have received a form submission: Name: ${contactForm.userName} Email: ${contactForm.userEmail} Message: ${contactForm.userMsg}`;
-    await fetch(`http://localhost:3001/api/email/?userName=${contactForm.userName}&userEmail=${contactForm.userEmail}&userMsg=${contactForm.userMsg}`);
-  }
-
   const { ref, inView } = useInView({
     rootMargin: '0px',
-    triggerOnce: true,
-  });
-
-  const { ref: ref7, inView: inView7 } = useInView({
-    rootMargin: '-300px',
     triggerOnce: true,
   });
 
@@ -132,51 +114,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* price list */}
-        <>
-          <h2 className="header">Price List</h2>
-          <div ref={ref7} className={`priceImgContainer ${inView7 ? 'fadeIn' : 'hidden'}`}>
-            <a href="/img/Pricinglist.png">
-              <img className="priceImg" src="../../img/Pricinglist.png" alt="price list" />
-            </a>
-          </div>
-        </>
-
-
-        {/* contact form */}
-        <div className="infoContainer">
-          <div className="infoBox">
-            <div className="information">
-              <h2 id='ContactH' className="header2">Contact Us</h2>
-            </div>
-            <div className="startingContainer">
-              <p><i class="fa-solid fa-envelope"></i> Email: Petsandme2022*abc*@gmail.com</p>
-              <p>Please remove "*abc*" when sending an email.</p>
-            </div>
-            <h3 className="headerContact">Contact Form</h3>
-            <form className="form" onSubmit={handleForm}>
-
-              <div className="nameInput">
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="userName" id='name' className='input' required />
-              </div>
-
-              <div className="emailInput">
-                <label htmlFor="email">Email:</label>
-                <input type="email" name="userEmail" id='email' className='input' required />
-              </div>
-
-              <div className="msgInput">
-                <label htmlFor="message">Message:</label>
-                <textarea id='message' name="userMsg" className="input"></textarea>
-              </div>
-
-              <button className="btn2">Send</button>
-            </form>
-          </div>
-        </div>
-        <Images />
       </section >
       <Footer />
     </>

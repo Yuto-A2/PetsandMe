@@ -16,7 +16,7 @@ export default function Images() {
     return (
         <>
             <div className="images">
-                <h2 className="imgHeader">Photos</h2>
+                <h2 className="imgHeader">Gallery</h2>
             </div>
             {imgs.map((img) => (
                 <div className='imgagesContainer' key={img._id}>

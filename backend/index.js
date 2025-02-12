@@ -11,7 +11,7 @@ const DBUSER = process.env.DBUSER;
 const DBPWD = process.env.DBPWD;
 const DBHOST = process.env.DBHOST;
 
-mongoose.connect('mongodb+srv://temothy101629:YxrJHRGTDwlHgHEX@petsme.qnx1i.mongodb.net/')
+mongoose.connect(`mongodb+srv://${DBUSER}:${DBPWD}@${DBHOST}`)
 .then(()=> {
     console.log("connect with db...");
 }).catch((err) => {

@@ -7,11 +7,9 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
-const DBUSER = process.env.DBUSER;
-const DBPWD = process.env.DBPWD;
-const DBHOST = process.env.DBHOST;
+const MONGODB = process.env.MONGODB;
 
-mongoose.connect(`mongodb+srv://${DBUSER}:${DBPWD}@${DBHOST}`)
+mongoose.connect(`${MONGODB}`)
 .then(()=> {
     console.log("connect with db...");
 }).catch((err) => {
